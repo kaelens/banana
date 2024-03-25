@@ -1,0 +1,62 @@
+canvas {
+    display: block;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+  
+section {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    margin: 0 20px;
+}
+
+section h1 {
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+section:before,
+section:after {
+    content: '';
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+section:before {
+    font-family: "Dosis", sans-serif;
+    color: #397037;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    content: 'Banana Milk';
+    opacity: 0;
+}
+
+section:hover h1 {
+    opacity: 0;
+}
+
+section:hover:before {
+    opacity: 1;
+}
+
+h1 {
+    font-family: "Dosis", sans-serif;
+    color: #397037;
+    font-size: 3em;
+}
